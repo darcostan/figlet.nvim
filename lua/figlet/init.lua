@@ -1,7 +1,7 @@
 --Global Settings-----------------------------------------------------------------------------------
 Font = "big"
 ---------------------------------------------------------------------------------------------------
-local function Config(config)
+local function setup(config)
 	Font = config.font
 end
 
@@ -49,7 +49,7 @@ local function FigSelectComment()
 end
 
 return {
-	Config = Config,
+	sertup = setup,
 	Fig = Fig,
 	FigComment = FigComment,
 	FigCommentWithHighlight = FigCommentWithHighlight,
