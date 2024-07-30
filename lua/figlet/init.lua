@@ -22,7 +22,6 @@ local function GetLine()
 end
 
 local function FigComment(arg1)
-	local Font = arg1.last
 	vim.api.nvim_command(":read !figlet -f " .. Font .. " " .. arg1)
 	require("Comment.api").toggle.linewise("line")
 end
