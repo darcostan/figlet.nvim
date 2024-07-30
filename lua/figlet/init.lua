@@ -2,7 +2,9 @@
 Font = "big"
 ---------------------------------------------------------------------------------------------------
 local function setup(config)
-	Font = config.font
+	if config then
+		Font = config.font
+	end
 end
 
 local function Fig(arg1)
@@ -49,7 +51,7 @@ local function FigSelectComment()
 end
 
 return {
-	Config = setup,
+	setup = setup,
 	Fig = Fig,
 	FigComment = FigComment,
 	FigCommentWithHighlight = FigCommentWithHighlight,
