@@ -11,6 +11,10 @@ local function Fig(arg1)
 	vim.api.nvim_command(":read !figlet -f " .. Font .. " " .. arg1)
 end
 
+local function ChangeFont(arg1)
+	Font = arg1
+end
+
 local function GetLine()
 	local curr_line = vim.api.nvim_win_get_cursor(0)[1]
 	print(curr_line)
@@ -58,4 +62,5 @@ return {
 	FigList = FigList,
 	FigSelect = FigSelect,
 	FigSelectComment = FigSelectComment,
+	ChangeFont = ChangeFont,
 }
