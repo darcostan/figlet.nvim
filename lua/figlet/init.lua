@@ -49,7 +49,7 @@ local function FigSelectComment()
 end
 
 return {
-	sertup = setup,
+	Config = setup,
 	Fig = Fig,
 	FigComment = FigComment,
 	FigCommentWithHighlight = FigCommentWithHighlight,
